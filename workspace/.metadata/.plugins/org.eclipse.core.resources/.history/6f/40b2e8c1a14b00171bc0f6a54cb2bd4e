@@ -1,0 +1,18 @@
+package jacksonapi.client;
+
+import jacksonapi.employee;
+import jacksonapi.util.jasoutil;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		employee emp=new employee();
+		emp.setId(1);
+		emp.setName("saloni");
+		String jsonemp=jasoutil.convertJavaToJson(emp);
+		System.out.println(jsonemp);
+		
+	}
+
+}
